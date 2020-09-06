@@ -24,17 +24,27 @@ const navBtns = document.querySelectorAll('.navbar-toggler');
 let canWheel = true; //Разрешено ли запускать ф-цию при использовании колесика
 let timeoutWheel; //Переменная для хранения setTimeout
 
-// ФУНКЦИИ
-  // ФУНКЦИИ ДЛЯ КОНТАКТНОЙ ИНФОРМАЦИИ
 // Скрытие блока с контактной  информацией
 function removeInfoBlock(target) {
   target.nextElementSibling.classList.remove('info-title');
 } 
-// Показ блока с контактной  информацией
+// Показ и скрытие блока с контактной  информацией
 function addInfoBlock(target) {
   target.nextElementSibling.classList.add('info-title');
 }
-  // ФУНКЦИИ ДЛЯ СЛАЙДЕРА
+
+function hideInfoBlock(e) {
+  if (e.target == blockInfo ||
+    e.target == navBtns[1] ||
+    e.target == navBtns[1].children[0] ||
+    !blockInfo.className.includes('show-flex')) {
+    return;
+  }
+
+  blockInfo.classList.toggle('show-flex');
+}
+
+// ФУНКЦИИ ДЛЯ СЛАЙДЕРА
 function nextImage() {
   const numImgs = (slider.children.length - 1) / 2;
   if (currentSliderTransform <= numImgs * -258.6) {
@@ -63,6 +73,22 @@ function prevImage() {
 function resetCanWheel() {
   canWheel = true;
 }
+
+function mainWheelHandler(e) {
+  if (canWheel) {
+    if (e.deltaX > 0) {
+      nextImage();
+    } else {
+      prevImage();
+    }
+    
+    canWheel = false;
+  } else {
+    clearInterval(timeoutWheel);
+    timeoutWheel = setTimeout(resetCanWheel, 100);
+  }
+}
+
 // Слушатели  событий
 // При клике показать  меню быстрого перемещения по разделам сайта
 navBtns[0].addEventListener('click', e => {
@@ -96,17 +122,11 @@ navBtns[1].addEventListener('click', e => {
 
   blockInfo.classList.toggle('show-flex');
 });
-// При клике на другое место скрывать контактную  информацию
-document.addEventListener('click', e => {
-  if (e.target == blockInfo ||
-      e.target == navBtns[1] ||
-      e.target == navBtns[1].children[0] ||
-      !blockInfo.className.includes('show-flex')) {
-    return;
-  }
 
-  blockInfo.classList.toggle('show-flex');
-});
+
+
+// При клике на другое место скрывать контактную  информацию
+document.addEventListener('click', hideInfoBlock);
 
 // Показ информации при наведении на кнопку
 let timeoutOne;
@@ -129,6 +149,7 @@ btnEmail.addEventListener('mouseleave', e => {
     removeInfoBlock(btnEmail);
   }, 2000);
 });
+
 // Продолжить показ информации после наведения на информационный блок
 btnCall.nextElementSibling.addEventListener('mouseover', e => {
   clearTimeout(timeoutOne);
@@ -149,23 +170,7 @@ btnEmail.nextElementSibling.addEventListener('mouseout', e => {
 });
 
 // Прокрутка слайдера
-imgNext.addEventListener('click', () => {
-  nextImage();
-});
-imgPrev.addEventListener('click', () => {
-  prevImage();
-});
+imgNext.addEventListener('click', nextImage);
+imgPrev.addEventListener('click', prevImage);
 
-section.addEventListener('wheel', e => {
-  if (canWheel) {
-    if (e.deltaX > 0) {
-      nextImage();
-    } else {
-      prevImage();
-    }
-    canWheel = false;
-  } else {
-    clearInterval(timeoutWheel);
-    timeoutWheel = setTimeout(resetCanWheel, 100);
-  }
-});
+section.addEventListener('wheel', mainWheelHandler);
