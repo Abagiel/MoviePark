@@ -837,7 +837,7 @@ video {
     }
   }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   [data-elem-plan] [data-elem-toggler] {
   background: #d3fe01;
   border-radius: 10px;
