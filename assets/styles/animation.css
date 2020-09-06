@@ -1,0 +1,599 @@
+/*Где находятся элементы анимации*/
+.animation-container {
+	height: 100vh;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 1200px;
+} 
+.anim-pos-left {
+	left: 0 !important;
+}
+.animation-container div {
+	animation-duration: 1.6s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+ /*Цвета  элементов анимации*/
+ .anim-item--white {
+ 	background: #fff;
+ 	box-shadow: 0 0 0 1.5px #fff;
+ }
+ .anim-item--transparent {
+ 	background: rgba(0, 0, 0, .15);
+}
+ .anim-item--yellow {
+ 		background: hsl(70, 100%, 50%);
+ }
+ @media (max-width: 767px) {
+ 	.anim-item--yellow {
+ 		background: rgba(0,0,0,.2);
+ 	}
+ }
+ .anim-item--brown {
+ 	background: hsl(7.6, 86.3%, 14.3%);
+ }
+
+
+/*Начальное расположение элементов анимации и размеры*/
+.up-to-down {
+	display: none;
+	opacity: 0;
+  transform: skewX(-25deg) translateY(-100vh);
+}
+.down-to-up {
+	display: none;
+	opacity: 0;
+	transform: skewX(-25deg) translateY(100vh);
+}
+/*Первый блок*/
+.home-1__anim-item--1 {
+	height: 100%;
+	left: 48%;
+	width: 40%;
+}
+.home-1__anim-item--2 {
+	bottom: 0;
+	height: 25%;
+	left: 60%;
+	width: 15%;
+}
+.home-1__anim-item--3 {
+	height: 30%;
+	left: 50%;
+	top: 25%;
+	width: 10%;
+}
+.home-1__anim-item--4 {
+	height: 30%;
+	left: 85.4%;
+	top: 67%;
+	width: 5%;
+}
+.home-1__anim-item--5 {
+	height: 45%;
+	left: 10%;
+	top: 4%;
+	width: 15%;
+}
+.home-1__anim-item--6 {
+	height: 50%;
+	left: 61%;
+	top: 20%;
+	opacity: 0;
+}
+.home-1__anim-item--7 {
+	height: 30%;
+	left: 66%;
+	top: 63%;
+}
+.home-1__anim-item--8 {
+	height: 30%;
+	left: 67%;
+	top: 66%;	
+}
+.home-1__anim-item--9 {
+	height: 30%;
+	left: 68%;
+	top: 69%;
+}
+.home-1__anim-item--10 {
+	height: 35%;
+	left: 87.7%;
+	top: 64%;
+}
+.home-1__anim-item--11 {
+	height: 30%;
+	left: 28%;
+	top: 10%;
+}
+.home-1__anim-item--12 {
+	height: 25%;
+	left: 30%;
+	top: 13%;
+}
+/*Второй блок*/
+.home-2__anim-item--1 {
+	height: 100%;
+	left: 15%;
+	width: 40%;
+}
+.home-2__anim-item--2 {
+	bottom: 0;
+	height: 25%;
+	left: 35%;
+	width: 15%;
+}
+.home-2__anim-item--3 {
+	height: 30%;
+	left: 40%;
+	top: 35%;
+	width: 8%;
+}
+.home-2__anim-item--4 {
+	height: 24%;
+	left: 6.4%;
+	top: 67%;
+	width: 3%;
+}
+.home-2__anim-item--5 {
+	height: 28%;
+	left: 19%;
+	top: 10%;
+	width: 10%;
+}
+.home-2__anim-item--6 {
+	height: 50%;
+	left: 34%;
+	top: 20%;
+}
+.home-2__anim-item--7 {
+	height: 30%;
+	left: 44%;
+	top: 63%;
+}
+.home-2__anim-item--8 {
+	height: 30%;
+	left: 42%;
+	top: 66%;	
+}
+.home-2__anim-item--9 {
+	height: 30%;
+	left: 40%;
+	top: 69%;
+}
+.home-2__anim-item--10 {
+	height: 35%;
+	left: 7%;
+	top: 64%;
+}
+.home-2__anim-item--11 {
+	height: 30%;
+	left: 48%;
+	top: 10%;
+}
+.home-2__anim-item--12 {
+	height: 25%;
+	left: 50%;
+	top: 13%;
+}
+/*Третий блок*/
+.home-3__anim-item--1 {
+	height: 100%;
+	left: 48%;
+	width: 40%;
+}
+.home-3__anim-item--2 {
+	bottom: 20%;
+	height: 25%;
+	left: 60%;
+	width: 15%;
+}
+.home-3__anim-item--3 {
+	height: 30%;
+	left: 50%;
+	top: 25%;
+	width: 10%;
+}
+.home-3__anim-item--4 {
+	height: 30%;
+	left: 84.4%;
+	top: 3%;
+	width: 5%;
+}
+.home-3__anim-item--5 {
+	height: 30%;
+	left: 88%;
+	top: 56%;
+	width: 10%;
+}
+.home-3__anim-item--6 {
+	height: 50%;
+	left: 61%;
+	top: 20%;
+}
+.home-3__anim-item--7 {
+	height: 30%;
+	left: 59%;
+	top: 63%;
+}
+.home-3__anim-item--8 {
+	height: 30%;
+	left: 60%;
+	top: 66%;	
+}
+.home-3__anim-item--9 {
+	height: 30%;
+	left: 61%;
+	top: 69%;
+}
+.home-3__anim-item--10 {
+	height: 35%;
+	left: 86.7%;
+	top: 0%;
+}
+.home-3__anim-item--11 {
+	height: 30%;
+	left: 50%;
+	top: 10%;
+}
+.home-3__anim-item--12 {
+	height: 25%;
+	left: 52%;
+	top: 13%;
+}
+/*Четвертый  блок*/
+.home-4__anim-item--1 {
+	height: 100%;
+	left: 32%;
+	width: 40%;
+}
+.home-4__anim-item--2 {
+	bottom: 0%;
+	height: 25%;
+	left: 53%;
+	width: 12%;
+}
+.home-4__anim-item--3 {
+	height: 30%;
+	left: 34%;
+	top: 10%;
+	width: 10%;
+}
+.home-4__anim-item--4 {
+	height: 20%;
+	left: 61.4%;
+	top: 17%;
+	width: 5%;
+}
+.home-4__anim-item--5 {
+	height: 100%;
+	left: 77%;
+	top: 0%;
+	width: 10%;
+}
+.home-4__anim-item--6 {
+	height: 50%;
+	left: 44%;
+	top: 29%;
+}
+.home-4__anim-item--7 {
+	height: 30%;
+	left: 54%;
+	top: 63%;
+}
+.home-4__anim-item--8 {
+	height: 30%;
+	left: 55%;
+	top: 66%;	
+}
+.home-4__anim-item--9 {
+	height: 30%;
+	left: 56%;
+	top: 69%;
+}
+.home-4__anim-item--10 {
+	height: 35%;
+	left: 61.4%;
+	top: 15%;
+}
+.home-4__anim-item--11 {
+	height: 100%;
+	left: 88%;
+	top: 0%;
+}
+.home-4__anim-item--12 {
+	height: 100%;
+	left: 89%;
+	top: 0%;
+}
+/*Пятый  блок*/
+.home-5__anim-item--1 {
+	height: 100%;
+	left: 48%;
+	width: 40%;
+}
+.home-5__anim-item--2 {
+	bottom: 0;
+	height: 25%;
+	left: 42%;
+	width: 15%;
+}
+.home-5__anim-item--3 {
+	height: 24%;
+	left: 43%;
+	top: 15%;
+	width: 7%;
+}
+.home-5__anim-item--4 {
+	height: 30%;
+	left: 37.4%;
+	top: 67%;
+	width: 5%;
+}
+.home-5__anim-item--5 {
+	height: 45%;
+	left: 9%;
+	top: 7%;
+	width: 15%;
+}
+.home-5__anim-item--6 {
+	height: 50%;
+	left: 36%;
+	top: 16%;
+}
+.home-5__anim-item--7 {
+	height: 30%;
+	left: 50%;
+	top: 63%;
+}
+.home-5__anim-item--8 {
+	height: 30%;
+	left: 51%;
+	top: 66%;	
+}
+.home-5__anim-item--9 {
+	height: 30%;
+	left: 52%;
+	top: 69%;
+}
+.home-5__anim-item--10 {
+	height: 35%;
+	left: 0.7%;
+	top: 62%;
+}
+.home-5__anim-item--11 {
+	height: 30%;
+	left: 8%;
+	top: 10%;
+}
+.home-5__anim-item--12 {
+	height: 25%;
+	left: 53%;
+	top: 13%;
+}
+/*Шестой блок*/
+.home-6__anim-item--1 {
+	height: 100%;
+	left: 25%;
+	width: 40%;
+}
+.home-6__anim-item--2 {
+	bottom: 4%;
+	height: 25%;
+	left: 9%;
+	width: 12%;
+}
+.home-6__anim-item--3 {
+	height: 30%;
+	left: 67%;
+	top: 11%;
+	width: 10%;
+}
+.home-6__anim-item--4 {
+	height: 30%;
+	left: 85.4%;
+	top: 67%;
+	width: 5%;
+}
+.home-6__anim-item--5 {
+	height: 45%;
+	left: 1%;
+	top: 19%;
+	width: 15%;
+}
+.home-6__anim-item--6 {
+	height: 50%;
+	left: 51%;
+	top: 11%;
+}
+.home-6__anim-item--7 {
+	height: 30%;
+	left: 66%;
+	top: 44%;
+}
+.home-6__anim-item--8 {
+	height: 30%;
+	left: 84%;
+	top: 44%;	
+}
+.home-6__anim-item--9 {
+	height: 30%;
+	left: 71%;
+	top: 58%;
+}
+.home-6__anim-item--10 {
+	height: 35%;
+	left: 87.7%;
+	top: 64%;
+}
+.home-6__anim-item--11 {
+	height: 30%;
+	left: 28%;
+	top: 69%;
+}
+.home-6__anim-item--12 {
+	height: 25%;
+	left: 26%;
+	top: 17%;
+}
+/*Седьмой блок*/
+.home-7__anim-item--1 {
+	height: 100%;
+	left: 54%;
+	width: 40%;
+}
+.home-7__anim-item--2 {
+	bottom: 4%;
+	height: 25%;
+	left: 0%;
+	width: 7%;
+}
+.home-7__anim-item--3 {
+	height: 14%;
+	left: 35%;
+	top: 74%;
+	width: 6%;
+}
+.home-7__anim-item--4 {
+	height: 30%;
+	left: 49.4%;
+	top: 17%;
+	width: 5%;
+}
+.home-7__anim-item--5 {
+	height: 45%;
+	left: 0%;
+	top: 16%;
+	width: 15%;
+}
+.home-7__anim-item--6 {
+	height: 100%;
+	left: 92%;
+	top: 0%;
+}
+.home-7__anim-item--7 {
+	height: 30%;
+	left: 0%;
+	top: 63%;
+}
+.home-7__anim-item--8 {
+	height: 30%;
+	left: 20%;
+	top: 52%;	
+}
+.home-7__anim-item--9 {
+	height: 30%;
+	left: 59%;
+	top: 69%;
+}
+.home-7__anim-item--10 {
+	height: 35%;
+	left: 58.7%;
+	top: 14%;
+}
+.home-7__anim-item--11 {
+	height: 100%;
+	left: 96%;
+	top: 0%;
+}
+.home-7__anim-item--12 {
+	height: 100%;
+	left: 100%;
+	top: 0%;
+}
+/*Восьмой блок*/
+.home-8__anim-item--1 {
+	height: 100%;
+	left: 48%;
+	width: 40%;
+}
+.home-8__anim-item--2 {
+	bottom: 36%;
+	height: 25%;
+	left: 34%;
+	width: 11%;
+}
+.home-8__anim-item--3 {
+	height: 63%;
+	left: 50%;
+	top: 16%;
+	width: 3%;
+}
+.home-8__anim-item--4 {
+	height: 100%;
+	left: 100%;
+	top: 0%;
+	width: 15%;
+}
+.home-8__anim-item--5 {
+	height: 12%;
+	left: 2%;
+	top: 85%;
+	width: 15%;
+}
+.home-8__anim-item--6 {
+	height: 50%;
+	left: 48%;
+	top: 20%;
+}
+.home-8__anim-item--7 {
+	height: 30%;
+	left: 58%;
+	top: 36%;
+}
+.home-8__anim-item--8 {
+	height: 30%;
+	left: 64%;
+	top: 36%;	
+}
+.home-8__anim-item--9 {
+	height: 30%;
+	left: 71%;
+	top: 36%;
+}
+.home-8__anim-item--10 {
+	height: 100%;
+	left: 99.7%;
+	top: 0%;
+}
+.home-8__anim-item--11 {
+	height: 30%;
+	left: 39%;
+	top: 77%;
+}
+.home-8__anim-item--12 {
+	height: 25%;
+	left: 42%;
+	top: 17%;
+}
+
+/*Анимация картинок и блоков с текстомм*/
+.init-position__down {
+	opacity: 0;
+	transform: translateY(100vh);
+	transition: all ease-in-out 0.8s;
+}
+.init-position__down-transit {
+	opacity: 1;
+	transform: translateY(0);
+	transition: all ease-in-out 0.8s;
+}
+.init-position__right {
+	opacity: 0;
+	transform: translateX(100vw);
+	transition: all ease-in-out 0.8s;
+}
+.init-position__right-transit {
+	opacity: 1;
+	transform: translateX(0);
+	transition: all ease-in-out 0.8s;
+}
+/*Анимация*/
+@keyframes toggle {
+	50% {
+	opacity: 1;
+	transform: skewX(-25deg) translateY(0);
+	}
+}

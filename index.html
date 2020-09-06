@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Document</title>
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="assets/styles/bootstrap.css">
+  <link rel="stylesheet" href="assets/styles/main.css">
+  <link rel="stylesheet" href="assets/styles/animation.css">
+  <link rel="stylesheet" href="assets/styles/materialdesignicons.min.css">
+  <!-- JS Links -->
+  <script src="assets/scripts/jquery-3.4.1.js"></script>
+  <script src="assets/scripts/popper-1.14.7.js"></script>
+  <script src="assets/scripts/bootstrap.min.js"></script>
+  <script src="assets/scripts/main.js" defer></script>
+  <script src="assets/scripts/animation.js" defer></script>
+  <script src="assets/scripts/toggler.js" defer></script>
+</head>
+
+<body>
+  <div id="backdrop" class="backdrop"></div>
+
+  <header>
+    <nav class="mx-width navbar navbar-expand-lg navbar-light fixed-top mx-0 mx-lg-5 mx-xl-auto py-4">
+      <a href="#!" class="text-center text-lg-left order-2 order-lg-1 navbar-brand flex-grow-1 text-white mr-0 mr-lg-3">
+        <img src="assets/img/logo.png" alt="logo" class="logo">
+      </a>
+
+      <button class="position-relative order-1 navbar-toggler" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="order-2 collapse navbar-collapse z-100k" id="navbar-links">
+        <ul class="navbar-nav flex-grow-1 justify-content-between text-capitalize align-items-center">
+          <li class="nav-item nav-item-hover">
+            <a data-navigate='' href="#section-home" class="nav-link text-white">Home</a>
+          </li>
+          <li class="nav-item nav-item-hover">
+            <a data-navigate='' href="#section-about" class="nav-link text-white">About</a>
+          </li>
+          <li class="nav-item nav-item-hover">
+            <a data-navigate='' href="#section-visit" class="nav-link text-white">Plan your visit</a>
+          </li>
+          <li class="nav-item nav-item-hover">
+            <a data-navigate='' href="#section-movies" class="nav-link text-white">Our movies</a>
+          </li>
+          <li class="nav-item nav-item-hover">
+            <a data-navigate='' href="#section-prices" class="nav-link text-white">Ticket prices</a>
+          </li>
+          <li class="nav-item nav-item-hover">
+            <a data-navigate='' href="#section-contacts" class="nav-link text-white">Contacts</a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="order-3 navbar-toggler border-0 position-relative" type="button">
+        <span class="mdi mdi-comment-question-outline question-mark"></span>
+      </button>
+      
+      <div class="order-3 collapse navbar-collapse justify-content-end block-info" id='block-info'>
+        <ul class="navbar-nav d-flex justify-content-lg-around align-content-between">
+          <li class="nav-item d-flex align-items-center position-relative">
+            <button id="btn-call" class="btn-custom btn-custom-round bg-white p-2" type="button"><i class="mdi mdi-phone header-icon"></i>
+              </button>
+              <span class='md-text'>+777-888-999</span>
+          </li>
+          <li class="nav-item mx-lg-2 d-flex align-items-center position-relative">
+            <button id="btn-email" class="btn-custom btn-custom-round bg-white p-2" type="button"><i class='mdi mdi-email header-icon'></i>
+              </button>
+              <span class="md-text">moviepark@gmail.com</span>
+          </li>
+          <li class="nav-item align-self-lg-center">
+            <button class="btn-custom btn-custom-primary btn-custom-ellipse btn-custom-anim font-weight-bold">
+              <span class="btn-custom-text">Donate</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!---Sections HOME-->
+  <section class='section-home__first-block' id="section-home">
+    <div class="animation-container">
+      <div class="home-1__anim-item--1 anim-item--transparent position-absolute down-to-up"></div>
+      <div class="home-1__anim-item--2 anim-item--transparent position-absolute up-to-down"></div>
+      <div class="home-1__anim-item--3 anim-item--yellow position-absolute up-to-down"></div>
+      <div class="home-1__anim-item--4 anim-item--yellow position-absolute down-to-up"></div>
+      <div class="home-1__anim-item--5 anim-item--yellow position-absolute down-to-up"></div>
+      <div class="home-1__anim-item--6 anim-item--white position-absolute down-to-up"></div>
+      <div class="home-1__anim-item--7 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-1__anim-item--8 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-1__anim-item--9 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-1__anim-item--10 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-1__anim-item--11 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-1__anim-item--12 anim-item--white position-absolute down-to-up"></div>
+    </div>
+    <div class="mx-width container-fluid h-100">
+      <div class="row h-100 mx-0 mx-md-4 align-items-end">
+        <div class="col-12 col-md-6 h-100 title-block-height init-position__down d-flex flex-column justify-content-center text-center d-md-block text-md-left pb-5 pb-md-0 z-5">
+          <h1 class="text-size-48 text-white text-capitalize">Discover beutifull world a cinema</h1>
+          <p class="text-size-18 text-white mt-1 mt-md-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+            quisquam! Nesciunt
+            magnam, debitis doloribus enim blanditiis.</p>
+          <div class="d-flex flex-column flex-lg-row mt-2 mt-md-5">
+            <button
+              class="btn-custom btn-custom-ellipse btn-custom-primary btn-custom-anim font-weight-bold btn-custom-lg"><span
+                class="btn-custom-text">Buy
+                ticket</span></button>
+            <button
+              class="btn-custom btn-custom-ellipse btn-custom-white btn-custom-anim-white btn-custom-anim font-weight-bold btn-custom-lg ml-lg-4 mt-lg-0 mt-1"><span
+                class="btn-custom-text">Learn
+                more</span></button>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 h-25 title-block-height init-position__right">
+          <img src="assets/img/background/flyisle-1.png" class="img__section-home-1 up-fix">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-home__second-block">
+    <div class="animation-container anim-pos-left">
+      <div class="home-2__anim-item--1 anim-item--transparent position-absolute down-to-up"></div>
+      <div class="home-2__anim-item--2 anim-item--transparent position-absolute up-to-down"></div>
+      <div class="home-2__anim-item--3 anim-item--brown position-absolute up-to-down"></div>
+      <div class="home-2__anim-item--4 anim-item--brown position-absolute down-to-up"></div>
+      <div class="home-2__anim-item--5 anim-item--brown position-absolute down-to-up"></div>
+      <div class="home-2__anim-item--6 anim-item--white position-absolute down-to-up"></div>
+      <div class="home-2__anim-item--7 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-2__anim-item--8 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-2__anim-item--9 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-2__anim-item--10 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-2__anim-item--11 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-2__anim-item--12 anim-item--white position-absolute down-to-up"></div>
+    </div>
+    <div class="mx-width container-fluid h-100">
+      <div class="row h-100 mx-0 mx-md-4 align-items-end">
+        <div class="col-12 col-md-6 h-25 title-block-height init-position__right order-2 order-md-0 d-flex justify-content-center d-md-block">
+          <img src="assets/img/background/tarzan-1.png" class="img__section-home-2 up-fix">
+        </div>
+        <div class="col-12 col-md-6 h-100 title-block-height init-position__down d-flex flex-column justify-content-center text-center d-md-block text-md-left pb-5 pb-md-0 z-5 order-1 order-md-0">
+          <h1 class="text-size-48 text-white text-capitalize">huge territory with over 200 various places</h1>
+          <p class="text-size-18 text-white mt-1 mt-md-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+            quisquam! Nesciunt
+            magnam, debitis doloribus enim blanditiis.</p>
+          <div class="d-flex flex-column flex-lg-row mt-2 mt-md-5">
+            <button
+              class="btn-custom btn-custom-ellipse btn-custom-primary btn-custom-anim font-weight-bold btn-custom-lg"><span
+                class="btn-custom-text">Buy
+                ticket</span></button>
+            <button
+              class="btn-custom btn-custom-ellipse btn-custom-white btn-custom-anim-white btn-custom-anim font-weight-bold btn-custom-lg ml-lg-4 mt-lg-0 mt-1"><span
+                class="btn-custom-text">Learn
+                more</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-home__third-block">
+    <div class="animation-container">
+      <div class="home-3__anim-item--1 anim-item--transparent position-absolute down-to-up"></div>
+      <div class="home-3__anim-item--2 anim-item--transparent position-absolute up-to-down"></div>
+      <div class="home-3__anim-item--3 anim-item--yellow position-absolute up-to-down"></div>
+      <div class="home-3__anim-item--4 anim-item--yellow position-absolute down-to-up"></div>
+      <div class="home-3__anim-item--5 anim-item--yellow position-absolute down-to-up"></div>
+      <div class="home-3__anim-item--6 anim-item--white position-absolute down-to-up"></div>
+      <div class="home-3__anim-item--7 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-3__anim-item--8 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-3__anim-item--9 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-3__anim-item--10 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-3__anim-item--11 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-3__anim-item--12 anim-item--white position-absolute down-to-up"></div>
+    </div>
+    <div class="mx-width container-fluid h-100">
+      <div class="row h-100 mx-0 mx-md-4 align-items-end">
+        <div class="col-12 col-md-6 h-100 title-block-height init-position__down d-flex flex-column justify-content-center text-center d-md-block text-md-left pb-5 pb-md-0">
+          <h1 class="text-size-48 text-white text-capitalize">an unforgettable experience</h1>
+          <p class="text-size-18 text-white mt-1 mt-md-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+            quisquam! Nesciunt
+            magnam, debitis doloribus enim blanditiis.</p>
+          <div class="d-flex flex-column flex-lg-row mt-2 mt-md-5">
+            <button
+              class="btn-custom btn-custom-ellipse btn-custom-primary btn-custom-anim font-weight-bold btn-custom-lg"><span
+                class="btn-custom-text">Buy
+                ticket</span></button>
+            <button
+              class="btn-custom btn-custom-ellipse btn-custom-white btn-custom-anim-white btn-custom-anim font-weight-bold btn-custom-lg ml-lg-4 mt-lg-0 mt-1"><span
+                class="btn-custom-text">Learn
+                more</span></button>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 h-25 title-block-height init-position__right">
+          <img src="assets/img/background/castle-1.png" class="img__section-home-3 up-fix">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Section ABOUT-->
+
+  <section class="section-about" id='section-about'>
+    <div class="animation-container">
+      <div class="home-4__anim-item--1 anim-item--transparent position-absolute down-to-up"></div>
+      <div class="home-4__anim-item--2 anim-item--transparent position-absolute up-to-down"></div>
+      <div class="home-4__anim-item--3 anim-item--yellow position-absolute up-to-down"></div>
+      <div class="home-4__anim-item--4 anim-item--yellow position-absolute down-to-up"></div>
+      <div class="home-4__anim-item--5 anim-item--yellow position-absolute down-to-up"></div>
+      <div class="home-4__anim-item--6 anim-item--white position-absolute down-to-up"></div>
+      <div class="home-4__anim-item--7 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-4__anim-item--8 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-4__anim-item--9 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-4__anim-item--10 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-4__anim-item--11 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-4__anim-item--12 anim-item--white position-absolute down-to-up"></div>
+    </div>
+    <div class="mx-width container-fluid h-100">
+      <div class="row h-100 mx-md-5 mx-0 align-items-end px-0 px-md-5">
+        <div class="col-12 col-md-6 h-100 title-block-height init-position__down d-flex flex-column align-items-center justify-content-center text-center d-md-block text-md-left pb-5 pb-md-0">
+          <h2 class="text-size-36 text-white text-capitalize">a few words about movie park</h2>
+          <p class="text-white mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur eveniet ad
+            autem sit, harum sequi hic ullam nisi culpa quia, ipsa, non deserunt commodi eligendi quasi ducimus totam
+            aliquam molestiae.</p>
+
+          <div class="row mt-2 mt-md-4 flex-nowrap flex-sm-wrap position-relative" data-elem-about='about'>
+            <div class='about-toggler flex-nowrap flex-sm-wrap d-flex'>
+              <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-center justify-content-center px-0 w-break">
+              <i class="mdi mdi-tree-outline display-4 text-white"></i>
+              <p class='text-size-18 font-weight-bold text-white mb-0 ml-2'>Exotic
+              </p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-center justify-content-center px-0 w-break">
+              <i class="mdi mdi-earth display-4 text-white"></i>
+              <p class='text-size-18 font-weight-bold text-white mb-0 ml-2'>
+                Foreign</p>
+            </div>
+            <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center px-0 w-break">
+              <i class="mdi mdi-movie-outline display-4 text-white"></i>
+              <p class='text-size-18 font-weight-bold text-white mb-0 ml-2'>Classic
+              </p>
+            </div>
+            </div>
+
+            <div data-elem-toggler='0' class="toggler-active"></div>
+            <div data-elem-toggler='1'></div>
+            <div data-elem-toggler='2'></div>
+
+          </div>
+          <div class='mt-2 mt-md-3'>
+            <button
+              class="btn-custom btn-custom-ellipse btn-custom-primary btn-custom-anim font-weight-bold btn-custom-lg"><span
+                class="btn-custom-text">Learn more</span></button>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 h-25 title-block-height init-position__right">
+          <video src="assets/videos/trailer.mp4" autobuffer controls class="up-fix"></video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section VISIT -->
+
+  <section class="section-visit" id="section-visit">
+    <div class="container-fluid h-100 mx-width">
+    <div class="animation-container anim-pos-left">
+      <div class="home-5__anim-item--1 anim-item--transparent position-absolute down-to-up"></div>
+      <div class="home-5__anim-item--2 anim-item--transparent position-absolute up-to-down"></div>
+      <div class="home-5__anim-item--3 anim-item--yellow position-absolute up-to-down"></div>
+      <div class="home-5__anim-item--4 anim-item--yellow position-absolute down-to-up"></div>
+      <div class="home-5__anim-item--5 anim-item--yellow position-absolute down-to-up"></div>
+      <div class="home-5__anim-item--6 anim-item--white position-absolute down-to-up"></div>
+      <div class="home-5__anim-item--7 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-5__anim-item--8 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-5__anim-item--9 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-5__anim-item--10 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-5__anim-item--11 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-5__anim-item--12 anim-item--white position-absolute down-to-up"></div>
+    </div>
+    <div class="row h-100 flex-row-reverse flex-sm-row">
+      <div class="col-auto px-0 px-sm-1 col-sm-4 col-lg-6 h-100 init-position__right">
+        <img src="assets/img/background/joker-2.png" class="img__section-visit">
+      </div>
+      <div class="col-12 col-sm-8 col-lg-6 h-100 init-position__down z-5">
+        <div class="row h-100 p-5 position-relative" data-elem-plan='plan'>
+          <div class="col-12 mt-5">
+            <h2 class="text-white text-size-36 font-weight-bold text-capitalize text-center text-sm-left">plan your visit</h2>
+          </div>
+          <div class='plan-toggler d-flex flex-nowrap flex-sm-wrap max-w'>
+            
+          <div class="col-12 col-sm-6 mt-3 d-flex flex-column align-items-center justify-content-center text-center d-sm-block text-sm-left">
+            <div class="icon__visit-container">
+              <svg viewBox='0,0,640,640'>
+                <path id='svg-morph--1'
+                  d="M577.02 32.66C647.61 91.38 596.7 233.47 596.7 332.37C596.7 413.61 599.35 525.97 549.39 582.43C490.74 648.7 422.59 575.05 327.22 575.05C238.03 575.05 137.72 658.07 79.67 599.12C22.76 541.34 18.56 436.29 18.56 348.87C18.56 273.81 113.53 259.39 156.87 204.78C215.51 130.91 242.16 121.28 343.71 121.28C421.42 121.28 521.56 -13.48 577.02 32.66Z">
+                </path>
+                <animate xlink:href="#svg-morph--1" attributeName='d' values='
+                   M577.02 32.66C647.61 91.38 596.7 233.47 596.7 332.37C596.7 413.61 599.35 525.97 549.39 582.43C490.74 648.7 422.59 575.05 327.22 575.05C238.03 575.05 137.72 658.07 79.67 599.12C22.76 541.34 18.56 436.29 18.56 348.87C18.56 273.81 113.53 259.39 156.87 204.78C215.51 130.91 242.16 121.28 343.71 121.28C421.42 121.28 521.56 -13.48 577.02 32.66Z; 
+                   M596.7 276.99C667.29 335.71 613.2 500.22 613.2 599.12C613.2 680.37 542.65 599.37 467.95 599.12C393.25 598.88 395.78 531.75 300.41 531.75C211.22 531.75 177.81 514.64 97.19 429.02C16.58 343.41 17.53 224.95 35.05 138.56C52.58 52.16 279.51 142.89 322.85 88.29C381.49 14.42 442.16 110.97 543.71 110.97C621.42 110.97 541.24 230.85 596.7 276.99Z;
+                   M558.56 554.31C488.94 524.37 386.39 472.39 386.39 571.29C386.39 652.53 190.07 623.08 115.37 622.84C40.67 622.59 139.08 520.41 43.71 520.41C-45.48 520.41 72.66 320.82 28.12 160.98C-16.41 1.14 282.47 141.44 300 55.05C317.53 -31.34 477.61 68.35 524.91 136.74C572.21 205.14 482.37 342.93 583.92 342.93C661.63 342.93 628.18 584.25 558.56 554.31Z;
+                   M410.1 627.5C340.48 597.56 267.84 555.89 148.25 551.7C28.66 547.51 115.84 484.93 66.92 418.71C17.99 352.49 159.7 289.48 123.09 203.92C86.48 118.35 187.09 73.4 287.92 12.53C388.74 -48.35 396.05 149.69 476.46 190.1C556.87 230.51 654.93 245.67 600.17 350.15C545.41 454.62 644.22 617.16 541.65 604.78C439.08 592.41 479.72 657.45 410.1 627.5Z;
+                   M558.56 554.31C488.94 524.37 386.39 472.39 386.39 571.29C386.39 652.53 190.07 623.08 115.37 622.84C40.67 622.59 139.08 520.41 43.71 520.41C-45.48 520.41 72.66 320.82 28.12 160.98C-16.41 1.14 282.47 141.44 300 55.05C317.53 -31.34 477.61 68.35 524.91 136.74C572.21 205.14 482.37 342.93 583.92 342.93C661.63 342.93 628.18 584.25 558.56 554.31Z;
+                   M596.7 276.99C667.29 335.71 613.2 500.22 613.2 599.12C613.2 680.37 542.65 599.37 467.95 599.12C393.25 598.88 395.78 531.75 300.41 531.75C211.22 531.75 177.81 514.64 97.19 429.02C16.58 343.41 17.53 224.95 35.05 138.56C52.58 52.16 279.51 142.89 322.85 88.29C381.49 14.42 442.16 110.97 543.71 110.97C621.42 110.97 541.24 230.85 596.7 276.99Z;
+                   M577.02 32.66C647.61 91.38 596.7 233.47 596.7 332.37C596.7 413.61 599.35 525.97 549.39 582.43C490.74 648.7 422.59 575.05 327.22 575.05C238.03 575.05 137.72 658.07 79.67 599.12C22.76 541.34 18.56 436.29 18.56 348.87C18.56 273.81 113.53 259.39 156.87 204.78C215.51 130.91 242.16 121.28 343.71 121.28C421.42 121.28 521.56 -13.48 577.02 32.66Z   
+                     ' dur='15s' repeatCount='indefinite' begin='0s'>
+                </animate>
+              </svg>
+              <i class='mdi mdi-paw text-white display-4 position-absolute icon__section-visit'></i>
+            </div>
+            <h6 class="text-white text-size-18 text-capitalize font-weight-bold mt-3">opening hours</h6>
+            <p class="text-white lh-18 text-size-14">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </div>
+          <div class="col-12 col-sm-6 mt-3 d-flex flex-column align-items-center justify-content-center text-center d-sm-block text-sm-left">
+            <div class="icon__visit-container">
+              <svg viewBox='0,0,640,640'>
+                <path id='svg-morph--2'
+                  d="M577.02 32.66C647.61 91.38 596.7 233.47 596.7 332.37C596.7 413.61 599.35 525.97 549.39 582.43C490.74 648.7 422.59 575.05 327.22 575.05C238.03 575.05 137.72 658.07 79.67 599.12C22.76 541.34 18.56 436.29 18.56 348.87C18.56 273.81 113.53 259.39 156.87 204.78C215.51 130.91 242.16 121.28 343.71 121.28C421.42 121.28 521.56 -13.48 577.02 32.66Z">
+                </path>
+                <animate xlink:href="#svg-morph--2" attributeName='d' values='
+                   M577.02 32.66C647.61 91.38 596.7 233.47 596.7 332.37C596.7 413.61 599.35 525.97 549.39 582.43C490.74 648.7 422.59 575.05 327.22 575.05C238.03 575.05 137.72 658.07 79.67 599.12C22.76 541.34 18.56 436.29 18.56 348.87C18.56 273.81 113.53 259.39 156.87 204.78C215.51 130.91 242.16 121.28 343.71 121.28C421.42 121.28 521.56 -13.48 577.02 32.66Z; 
+                   M596.7 276.99C667.29 335.71 613.2 500.22 613.2 599.12C613.2 680.37 542.65 599.37 467.95 599.12C393.25 598.88 395.78 531.75 300.41 531.75C211.22 531.75 177.81 514.64 97.19 429.02C16.58 343.41 17.53 224.95 35.05 138.56C52.58 52.16 279.51 142.89 322.85 88.29C381.49 14.42 442.16 110.97 543.71 110.97C621.42 110.97 541.24 230.85 596.7 276.99Z;
+                   M558.56 554.31C488.94 524.37 386.39 472.39 386.39 571.29C386.39 652.53 190.07 623.08 115.37 622.84C40.67 622.59 139.08 520.41 43.71 520.41C-45.48 520.41 72.66 320.82 28.12 160.98C-16.41 1.14 282.47 141.44 300 55.05C317.53 -31.34 477.61 68.35 524.91 136.74C572.21 205.14 482.37 342.93 583.92 342.93C661.63 342.93 628.18 584.25 558.56 554.31Z;
+                   M410.1 627.5C340.48 597.56 267.84 555.89 148.25 551.7C28.66 547.51 115.84 484.93 66.92 418.71C17.99 352.49 159.7 289.48 123.09 203.92C86.48 118.35 187.09 73.4 287.92 12.53C388.74 -48.35 396.05 149.69 476.46 190.1C556.87 230.51 654.93 245.67 600.17 350.15C545.41 454.62 644.22 617.16 541.65 604.78C439.08 592.41 479.72 657.45 410.1 627.5Z;
+                   M558.56 554.31C488.94 524.37 386.39 472.39 386.39 571.29C386.39 652.53 190.07 623.08 115.37 622.84C40.67 622.59 139.08 520.41 43.71 520.41C-45.48 520.41 72.66 320.82 28.12 160.98C-16.41 1.14 282.47 141.44 300 55.05C317.53 -31.34 477.61 68.35 524.91 136.74C572.21 205.14 482.37 342.93 583.92 342.93C661.63 342.93 628.18 584.25 558.56 554.31Z;
+                   M596.7 276.99C667.29 335.71 613.2 500.22 613.2 599.12C613.2 680.37 542.65 599.37 467.95 599.12C393.25 598.88 395.78 531.75 300.41 531.75C211.22 531.75 177.81 514.64 97.19 429.02C16.58 343.41 17.53 224.95 35.05 138.56C52.58 52.16 279.51 142.89 322.85 88.29C381.49 14.42 442.16 110.97 543.71 110.97C621.42 110.97 541.24 230.85 596.7 276.99Z;
+                   M577.02 32.66C647.61 91.38 596.7 233.47 596.7 332.37C596.7 413.61 599.35 525.97 549.39 582.43C490.74 648.7 422.59 575.05 327.22 575.05C238.03 575.05 137.72 658.07 79.67 599.12C22.76 541.34 18.56 436.29 18.56 348.87C18.56 273.81 113.53 259.39 156.87 204.78C215.51 130.91 242.16 121.28 343.71 121.28C421.42 121.28 521.56 -13.48 577.02 32.66Z 
+                     ' dur='15s' repeatCount='indefinite' begin='0s'>
+                </animate>
+              </svg>
+              <i class='mdi mdi-paw text-white display-4 position-absolute icon__section-visit'></i>
+            </div>
+            <h6 class="text-white text-size-18 text-capitalize font-weight-bold mt-3">group discounts</h6>
+            <p class="text-white lh-18 text-size-14">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem
+              ipsum dolor sit.</p>
+          </div>
+          <div class="col-12 col-sm-6 mt-3 d-flex flex-column align-items-center justify-content-center text-center d-sm-block text-sm-left">
+            <div class="icon__visit-container">
+              <svg viewBox='0,0,640,640'>
+                <path id='svg-morph--3'
+                  d="M577.02 32.66C647.61 91.38 596.7 233.47 596.7 332.37C596.7 413.61 599.35 525.97 549.39 582.43C490.74 648.7 422.59 575.05 327.22 575.05C238.03 575.05 137.72 658.07 79.67 599.12C22.76 541.34 18.56 436.29 18.56 348.87C18.56 273.81 113.53 259.39 156.87 204.78C215.51 130.91 242.16 121.28 343.71 121.28C421.42 121.28 521.56 -13.48 577.02 32.66Z">
+                </path>
+                <animate xlink:href="#svg-morph--3" attributeName='d' values='
+                   M577.02 32.66C647.61 91.38 596.7 233.47 596.7 332.37C596.7 413.61 599.35 525.97 549.39 582.43C490.74 648.7 422.59 575.05 327.22 575.05C238.03 575.05 137.72 658.07 79.67 599.12C22.76 541.34 18.56 436.29 18.56 348.87C18.56 273.81 113.53 259.39 156.87 204.78C215.51 130.91 242.16 121.28 343.71 121.28C421.42 121.28 521.56 -13.48 577.02 32.66Z; 
+                   M596.7 276.99C667.29 335.71 613.2 500.22 613.2 599.12C613.2 680.37 542.65 599.37 467.95 599.12C393.25 598.88 395.78 531.75 300.41 531.75C211.22 531.75 177.81 514.64 97.19 429.02C16.58 343.41 17.53 224.95 35.05 138.56C52.58 52.16 279.51 142.89 322.85 88.29C381.49 14.42 442.16 110.97 543.71 110.97C621.42 110.97 541.24 230.85 596.7 276.99Z;
+                   M558.56 554.31C488.94 524.37 386.39 472.39 386.39 571.29C386.39 652.53 190.07 623.08 115.37 622.84C40.67 622.59 139.08 520.41 43.71 520.41C-45.48 520.41 72.66 320.82 28.12 160.98C-16.41 1.14 282.47 141.44 300 55.05C317.53 -31.34 477.61 68.35 524.91 136.74C572.21 205.14 482.37 342.93 583.92 342.93C661.63 342.93 628.18 584.25 558.56 554.31Z;
+                   M410.1 627.5C340.48 597.56 267.84 555.89 148.25 551.7C28.66 547.51 115.84 484.93 66.92 418.71C17.99 352.49 159.7 289.48 123.09 203.92C86.48 118.35 187.09 73.4 287.92 12.53C388.74 -48.35 396.05 149.69 476.46 190.1C556.87 230.51 654.93 245.67 600.17 350.15C545.41 454.62 644.22 617.16 541.65 604.78C439.08 592.41 479.72 657.45 410.1 627.5Z;
+                   M558.56 554.31C488.94 524.37 386.39 472.39 386.39 571.29C386.39 652.53 190.07 623.08 115.37 622.84C40.67 622.59 139.08 520.41 43.71 520.41C-45.48 520.41 72.66 320.82 28.12 160.98C-16.41 1.14 282.47 141.44 300 55.05C317.53 -31.34 477.61 68.35 524.91 136.74C572.21 205.14 482.37 342.93 583.92 342.93C661.63 342.93 628.18 584.25 558.56 554.31Z;
+                   M596.7 276.99C667.29 335.71 613.2 500.22 613.2 599.12C613.2 680.37 542.65 599.37 467.95 599.12C393.25 598.88 395.78 531.75 300.41 531.75C211.22 531.75 177.81 514.64 97.19 429.02C16.58 343.41 17.53 224.95 35.05 138.56C52.58 52.16 279.51 142.89 322.85 88.29C381.49 14.42 442.16 110.97 543.71 110.97C621.42 110.97 541.24 230.85 596.7 276.99Z;
+                   M577.02 32.66C647.61 91.38 596.7 233.47 596.7 332.37C596.7 413.61 599.35 525.97 549.39 582.43C490.74 648.7 422.59 575.05 327.22 575.05C238.03 575.05 137.72 658.07 79.67 599.12C22.76 541.34 18.56 436.29 18.56 348.87C18.56 273.81 113.53 259.39 156.87 204.78C215.51 130.91 242.16 121.28 343.71 121.28C421.42 121.28 521.56 -13.48 577.02 32.66Z 
+                     ' dur='15s' repeatCount='indefinite' begin='0s'>
+                </animate>
+              </svg>
+              <i class='mdi mdi-paw text-white display-4 position-absolute icon__section-visit'></i>
+            </div>
+            <h6 class="text-white text-size-18 text-capitalize font-weight-bold mt-3">movie history</h6>
+            <p class="text-white lh-18 text-size-14">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div class="col-12 col-sm-6 mt-3 d-flex flex-column align-items-center justify-content-center text-center d-sm-block text-sm-left">
+            <div class="icon__visit-container">
+              <svg viewBox='0,0,640,640'>
+                <path id='svg-morph--4'
+                  d="M577.02 32.66C647.61 91.38 596.7 233.47 596.7 332.37C596.7 413.61 599.35 525.97 549.39 582.43C490.74 648.7 422.59 575.05 327.22 575.05C238.03 575.05 137.72 658.07 79.67 599.12C22.76 541.34 18.56 436.29 18.56 348.87C18.56 273.81 113.53 259.39 156.87 204.78C215.51 130.91 242.16 121.28 343.71 121.28C421.42 121.28 521.56 -13.48 577.02 32.66Z">
+                </path>
+                <animate xlink:href="#svg-morph--4" attributeName='d' values='
+                   M577.02 32.66C647.61 91.38 596.7 233.47 596.7 332.37C596.7 413.61 599.35 525.97 549.39 582.43C490.74 648.7 422.59 575.05 327.22 575.05C238.03 575.05 137.72 658.07 79.67 599.12C22.76 541.34 18.56 436.29 18.56 348.87C18.56 273.81 113.53 259.39 156.87 204.78C215.51 130.91 242.16 121.28 343.71 121.28C421.42 121.28 521.56 -13.48 577.02 32.66Z; 
+                   M596.7 276.99C667.29 335.71 613.2 500.22 613.2 599.12C613.2 680.37 542.65 599.37 467.95 599.12C393.25 598.88 395.78 531.75 300.41 531.75C211.22 531.75 177.81 514.64 97.19 429.02C16.58 343.41 17.53 224.95 35.05 138.56C52.58 52.16 279.51 142.89 322.85 88.29C381.49 14.42 442.16 110.97 543.71 110.97C621.42 110.97 541.24 230.85 596.7 276.99Z;
+                   M558.56 554.31C488.94 524.37 386.39 472.39 386.39 571.29C386.39 652.53 190.07 623.08 115.37 622.84C40.67 622.59 139.08 520.41 43.71 520.41C-45.48 520.41 72.66 320.82 28.12 160.98C-16.41 1.14 282.47 141.44 300 55.05C317.53 -31.34 477.61 68.35 524.91 136.74C572.21 205.14 482.37 342.93 583.92 342.93C661.63 342.93 628.18 584.25 558.56 554.31Z;
+                   M410.1 627.5C340.48 597.56 267.84 555.89 148.25 551.7C28.66 547.51 115.84 484.93 66.92 418.71C17.99 352.49 159.7 289.48 123.09 203.92C86.48 118.35 187.09 73.4 287.92 12.53C388.74 -48.35 396.05 149.69 476.46 190.1C556.87 230.51 654.93 245.67 600.17 350.15C545.41 454.62 644.22 617.16 541.65 604.78C439.08 592.41 479.72 657.45 410.1 627.5Z;
+                   M558.56 554.31C488.94 524.37 386.39 472.39 386.39 571.29C386.39 652.53 190.07 623.08 115.37 622.84C40.67 622.59 139.08 520.41 43.71 520.41C-45.48 520.41 72.66 320.82 28.12 160.98C-16.41 1.14 282.47 141.44 300 55.05C317.53 -31.34 477.61 68.35 524.91 136.74C572.21 205.14 482.37 342.93 583.92 342.93C661.63 342.93 628.18 584.25 558.56 554.31Z;
+                   M596.7 276.99C667.29 335.71 613.2 500.22 613.2 599.12C613.2 680.37 542.65 599.37 467.95 599.12C393.25 598.88 395.78 531.75 300.41 531.75C211.22 531.75 177.81 514.64 97.19 429.02C16.58 343.41 17.53 224.95 35.05 138.56C52.58 52.16 279.51 142.89 322.85 88.29C381.49 14.42 442.16 110.97 543.71 110.97C621.42 110.97 541.24 230.85 596.7 276.99Z;
+                   M577.02 32.66C647.61 91.38 596.7 233.47 596.7 332.37C596.7 413.61 599.35 525.97 549.39 582.43C490.74 648.7 422.59 575.05 327.22 575.05C238.03 575.05 137.72 658.07 79.67 599.12C22.76 541.34 18.56 436.29 18.56 348.87C18.56 273.81 113.53 259.39 156.87 204.78C215.51 130.91 242.16 121.28 343.71 121.28C421.42 121.28 521.56 -13.48 577.02 32.66Z 
+                     ' dur='15s' repeatCount='indefinite' begin='0s'>
+                </animate>
+              </svg>
+              <i class='mdi mdi-paw text-white display-4 position-absolute icon__section-visit'></i>
+            </div>
+            <h6 class="text-white text-size-18 text-capitalize font-weight-bold mt-3">upcoming events</h6>
+            <p class="text-white lh-18 text-size-14">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+
+        </div>
+        <div class="d-flex justify-content-between w-100">
+            <div data-elem-toggler='0' class="toggler-active"></div>
+            <div data-elem-toggler='1'></div>
+            <div data-elem-toggler='2'></div>
+            <div data-elem-toggler='3'></div>
+        </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- Section MOVIES -->
+
+  <section class="section-movies" id="section-movies">
+    <div class="animation-container">
+      <div class="home-6__anim-item--1 anim-item--transparent position-absolute down-to-up"></div>
+      <div class="home-6__anim-item--2 anim-item--transparent position-absolute up-to-down"></div>
+      <div class="home-6__anim-item--3 anim-item--yellow position-absolute up-to-down"></div>
+      <div class="home-6__anim-item--4 anim-item--yellow position-absolute down-to-up"></div>
+      <div class="home-6__anim-item--5 anim-item--yellow position-absolute down-to-up"></div>
+      <div class="home-6__anim-item--6 anim-item--white position-absolute down-to-up"></div>
+      <div class="home-6__anim-item--7 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-6__anim-item--8 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-6__anim-item--9 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-6__anim-item--10 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-6__anim-item--11 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-6__anim-item--12 anim-item--white position-absolute down-to-up"></div>
+    </div>
+    <div class="mx-width container-fluid h-100">
+      <div class="row h-100 align-content-center align-content-sm-end">
+        <div class="col-12 d-flex flex-column px-0 px-sm-5 pt-5 pb-3">
+
+          <div class="overflow-hidden">
+            <h2 class="text-size-36 text-white text-capitalize text-center">Our movies</h2>
+
+            <div class="img-slider d-flex justify-content-center mt-5 position-relative">
+              <img src="assets/img/covers/1.jpg" class="img-slider__element">
+              <img src="assets/img/covers/2.jpg" class="img-slider__element">
+              <img src="assets/img/covers/3.jpg" class="img-slider__element">
+              <img src="assets/img/covers/4.jpg" class="img-slider__element">
+              <img src="assets/img/covers/5.jpg" class="img-slider__element">
+              <img src="assets/img/covers/6.jpg" class="img-slider__element">
+              <img src="assets/img/covers/7.jpg" class="img-slider__element">
+              <img src="assets/img/covers/8.jpg" class="img-slider__element">
+              <img src="assets/img/covers/9.jpg" class="img-slider__element">
+              <img src="assets/img/covers/10.jpg" class="img-slider__element">
+              <img src="assets/img/covers/11.jpg" class="img-slider__element">
+            </div>
+
+            <div class="img-slider__navi mt-5 d-flex justify-content-center align-items-center">
+              <i class="mdi mdi-arrow-left text-white img-slider__navi-icon"></i>
+              <span class='img-slider__navi-circle btn-custom-round d-inline-block'></span>
+              <span class='img-slider__navi-circle btn-custom-round d-inline-block'></span>
+              <span class='img-slider__navi-circle btn-custom-round d-inline-block'></span>
+              <span class='img-slider__navi-circle btn-custom-round d-inline-block'></span>
+              <span class='img-slider__navi-circle btn-custom-round d-inline-block'></span>
+              <i class="mdi mdi-arrow-right text-white img-slider__navi-icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section PRICES -->
+
+  <section class="section-prices" id="section-prices">
+    <div class="animation-container">
+      <div class="home-7__anim-item--1 anim-item--transparent position-absolute down-to-up"></div>
+      <div class="home-7__anim-item--2 anim-item--transparent position-absolute up-to-down"></div>
+      <div class="home-7__anim-item--3 anim-item--yellow position-absolute up-to-down"></div>
+      <div class="home-7__anim-item--4 anim-item--yellow position-absolute down-to-up"></div>
+      <div class="home-7__anim-item--5 anim-item--yellow position-absolute down-to-up"></div>
+      <div class="home-7__anim-item--6 anim-item--white position-absolute down-to-up"></div>
+      <div class="home-7__anim-item--7 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-7__anim-item--8 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-7__anim-item--9 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-7__anim-item--10 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-7__anim-item--11 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-7__anim-item--12 anim-item--white position-absolute down-to-up"></div>
+    </div>
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-12 col-lg-9 pt-5 h-100 max-w z-5">
+          <div class="col-12 pt-5">
+            <h2 class="text-size-36 text-white text-capitalize text-center mt-5">ticket price</h2>
+          </div>
+          <div class="row position-relative" data-elem-price='price'>
+            <div class="price-toggler d-flex max-w">
+          
+              <div class="col-12 col-md-4">
+              <div class="card-price">
+                <h3 class='text-white text-size-30 text-capitalize text-center'>Tickets</h3>
+
+                <div class="card-price__body text-capitalize mt-3 pb-3">
+                  <div class="card-option text-white">
+                    <span>Children <br /> (4 to 7 years old)</span>
+                    <strong>$5/pers.</strong>
+                  </div>
+                  <div class="card-option text-white">
+                    <span>Adults</span>
+                    <strong>$15/pers.</strong>
+                  </div>
+                  <div class="card-option text-white">
+                    <span>Students</span>
+                    <strong>$8/pers.</strong>
+                  </div>
+                  <div class="card-option text-white">
+                    <span>Seniors</span>
+                    <strong>$11/pers.</strong>
+                  </div>
+                </div>
+
+                <div class="card-price__footer">
+                  <div class="text-white mt-3">
+                    <span><strong>Free for:</strong> <br /> children up to 3 years</span>
+                  </div>
+
+                  <button
+                    class="btn-custom btn-custom-ellipse btn-custom-white btn-custom-anim-white btn-custom-anim font-weight-bold btn-custom-90 align-self-center"><span
+                      class="btn-custom-text">Buy</span></button>
+                </div>
+              </div>
+              </div>
+              <div class="col-12 col-md-4">
+              <div class="card-price">
+                <h3 class='text-white text-size-30 text-capitalize text-center'>Excursions</h3>
+
+                <div class="card-price__body text-capitalize mt-3 pb-3">
+                  <div class="card-option text-white">
+                    <span>Group <br />(3-7 people)</span>
+                    <strong>$9/pers.</strong>
+                  </div>
+                  <div class="card-option text-white">
+                    <span>Individual <br /> (1-2 people)</span>
+                    <strong>$25/pers.</strong>
+                  </div>
+                  <div class="card-option text-white">
+                    <span>Children</span>
+                    <strong>$7/pers.</strong>
+                  </div>
+                </div>
+
+                <div class="card-price__footer">
+                  <div class="text-white mt-3">
+                    <span><strong>Additionally:</strong> <br /> tickets purchase is required</span>
+                  </div>
+
+                  <button
+                    class="btn-custom btn-custom-ellipse btn-custom-white btn-custom-anim-white btn-custom-anim font-weight-bold btn-custom-90 align-self-center"><span
+                      class="btn-custom-text">Buy</span></button>
+                </div>
+              </div>
+              </div>
+              <div class="col-12 col-md-4">
+              <div class="card-price">
+                <h3 class='text-white text-size-30 text-capitalize text-center'>Movie guides</h3>
+
+                <div class="card-price__body text-capitalize mt-3 pb-3">
+                  <div class="card-option text-white">
+                    <span>Adult program (5h)</span>
+                    <strong>$28</strong>
+                  </div>
+                  <div class="card-option text-white">
+                    <span>Teen program (2.5h)</span>
+                    <strong>$12</strong>
+                  </div>
+                  <div class="card-option text-white">
+                    <span>children's program</span>
+                    <strong>$12</strong>
+                  </div>
+                  <div class="card-option text-white">
+                    <span>Movie festival</span>
+                    <strong>$50</strong>
+                  </div>
+                </div>
+
+                <div class="card-price__footer">
+                  <div class="text-white mt-3">
+                    <span><strong>Free for:</strong> <br /> children up to 3 years</span>
+                  </div>
+
+                  <button
+                    class="btn-custom btn-custom-ellipse btn-custom-white btn-custom-anim-white btn-custom-anim font-weight-bold btn-custom-90 align-self-center"><span
+                      class="btn-custom-text">Buy</span></button>
+                </div>
+              </div>
+              </div>
+
+            </div>
+            <div data-elem-toggler='0' class="toggler-active"></div>
+            <div data-elem-toggler='1'></div>
+            <div data-elem-toggler='2'></div>
+          </div>
+        </div>
+        <div class="col-3 h-100 init-position__right pos-static">
+          <img src="assets/img/background/dragon.png" class="img__section-prices up-fix">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section CONTACTS -->
+
+  <section class="section-contacts" id="section-contacts">
+    <div class="animation-container">
+      <div class="home-8__anim-item--1 anim-item--transparent position-absolute down-to-up"></div>
+      <div class="home-8__anim-item--2 anim-item--transparent position-absolute up-to-down"></div>
+      <div class="home-8__anim-item--3 anim-item--yellow position-absolute up-to-down"></div>
+      <div class="home-8__anim-item--4 anim-item--yellow position-absolute down-to-up"></div>
+      <div class="home-8__anim-item--5 anim-item--yellow position-absolute down-to-up"></div>
+      <div class="home-8__anim-item--6 anim-item--white position-absolute down-to-up"></div>
+      <div class="home-8__anim-item--7 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-8__anim-item--8 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-8__anim-item--9 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-8__anim-item--10 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-8__anim-item--11 anim-item--white position-absolute up-to-down"></div>
+      <div class="home-8__anim-item--12 anim-item--white position-absolute down-to-up"></div>
+    </div>
+    <div class="container h-100">
+      <div class="row h-100 align-items-center justify-content-center p-md-5 p-0">
+        <div class="col-12 col-lg-5 h-100 title-block-height init-position__down d-flex d-lg-block flex-column align-items-center justify-content-center d-lg-block pb-5 pb-md-0">
+          <h2 class="text-white text-size-36 text-capitalize">Get in touch</h2>
+
+          <form class="contact-form d-flex flex-column align-items-center justify-content-center d-lg-block w-100">
+            <input type="text" name="name" id="name" placeholder="Name" class="mt-2">
+            <input type="email" id="email" placeholder="E-mail" class="mt-2">
+            <input type="number" placeholder="Phone" id='phoneNumber' class="mt-2">
+            <textarea name="message" id="message" placeholder="Message" class="mt-2"></textarea>
+            <button class="btn-custom btn-custom-ellipse btn-custom-primary btn-custom-anim font-weight-bold mt-3"><span
+                class="btn-custom-text text-capitalize">send
+                message</span> </button>
+          </form>
+        </div>
+        <div class="col-12 col-lg-7 h-25 title-block-height-down init-position__right">
+          <iframe class="w-100 h-100 up-fix"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119064.89582473961!2d79.00246940936191!3d21.161231530478684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0a5a31faf13%3A0x19b37d06d0bb3e2b!2sNagpur%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sru!4v1586175517816!5m2!1sen!2sru"
+            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
