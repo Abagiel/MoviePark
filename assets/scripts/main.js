@@ -3,8 +3,8 @@ const section = document.querySelector('#section-movies');
 // Элементы, задействованные в прокрутке слайдера с картинками 
 const sliderImgs = document.querySelectorAll(".img-slider__element"),
       slider = document.querySelector(".img-slider"),
-      imgNext = document.querySelector(".mdi-arrow-right"),
-      imgPrev = document.querySelector(".mdi-arrow-left");
+      imgNext = document.querySelector(".arrow-right"),
+      imgPrev = document.querySelector(".arrow-left");
 // Начальное значение сдвига основного блока с картинками
 let currentSliderTransform = 0;
 // Индекс центральной картинки
@@ -97,7 +97,7 @@ navBtns[0].addEventListener('click', e => {
   navBtns[0].children[0].classList.toggle('line-to-crest');
   backdrop.classList.toggle('show');
   navbarLinks.classList.toggle('show');
-  navbarLinks.parentElement.querySelector('a').classList.add('d-none');
+  navbarLinks.parentElement.querySelector('a').classList.toggle('d-none');
   navBtns[1].classList.toggle('d-none');
 });
 // Скрыть меню после нажатия  на ссылку
@@ -119,7 +119,6 @@ navbarLinks.addEventListener('click', e => {
 // При клике показать  контактную  информацию
 navBtns[1].addEventListener('click', e => {
   e.preventDefault();
-
   blockInfo.classList.toggle('show-flex');
 });
 

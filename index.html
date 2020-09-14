@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="assets/styles/bootstrap.css">
   <link rel="stylesheet" href="assets/styles/main.css">
   <link rel="stylesheet" href="assets/styles/animation.css">
-  <link rel="stylesheet" href="assets/styles/materialdesignicons.min.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet"> 
@@ -62,18 +61,22 @@
       </div>
 
       <button class="order-3 navbar-toggler border-0 position-relative" type="button">
-        <span class="mdi mdi-comment-question-outline question-mark"></span>
+        <span class="question-mark">?</span>
       </button>
       
       <div class="order-3 collapse navbar-collapse justify-content-end block-info" id='block-info'>
         <ul class="navbar-nav d-flex justify-content-lg-around align-content-between">
           <li class="nav-item d-flex align-items-center position-relative">
-            <button id="btn-call" class="btn-custom btn-custom-round bg-white p-2" type="button"><i class="mdi mdi-phone header-icon"></i>
+            <button id="btn-call" class="btn-custom btn-custom-round bg-white p-2" type="button"><i class="header-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+            </i>
               </button>
               <span class='md-text'>+777-888-999</span>
           </li>
           <li class="nav-item mx-lg-2 d-flex align-items-center position-relative">
-            <button id="btn-email" class="btn-custom btn-custom-round bg-white p-2" type="button"><i class='mdi mdi-email header-icon'></i>
+            <button id="btn-email" class="btn-custom btn-custom-round bg-white p-2" type="button"><i class='header-icon'>
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </i>
               </button>
               <span class="md-text">moviepark@gmail.com</span>
           </li>
@@ -226,17 +229,23 @@
           <div class="row mt-2 mt-md-4 flex-nowrap flex-sm-wrap position-relative" data-elem-about='about'>
             <div class='about-toggler flex-nowrap flex-sm-wrap d-flex'>
               <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-center justify-content-center px-0 w-break">
-              <i class="mdi mdi-tree-outline display-4 text-white"></i>
+              <i class="about-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+              </i>
               <p class='text-size-18 font-weight-bold text-white mb-0 ml-2'>Exotic
               </p>
             </div>
             <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-center justify-content-center px-0 w-break">
-              <i class="mdi mdi-earth display-4 text-white"></i>
+              <i class="about-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+              </i>
               <p class='text-size-18 font-weight-bold text-white mb-0 ml-2'>
                 Foreign</p>
             </div>
             <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center px-0 w-break">
-              <i class="mdi mdi-movie-outline display-4 text-white"></i>
+              <i class="about-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/></svg>
+              </i>
               <p class='text-size-18 font-weight-bold text-white mb-0 ml-2'>Classic
               </p>
             </div>
@@ -306,7 +315,9 @@
                      ' dur='15s' repeatCount='indefinite' begin='0s'>
                 </animate>
               </svg>
-              <i class='mdi mdi-paw text-white display-4 position-absolute icon__section-visit'></i>
+              <i class='position-absolute icon__section-visit'>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><circle cx="4.5" cy="9.5" r="2.5"/><circle cx="9" cy="5.5" r="2.5"/><circle cx="15" cy="5.5" r="2.5"/><circle cx="19.5" cy="9.5" r="2.5"/><path d="M17.34 14.86c-.87-1.02-1.6-1.89-2.48-2.91-.46-.54-1.05-1.08-1.75-1.32-.11-.04-.22-.07-.33-.09-.25-.04-.52-.04-.78-.04s-.53 0-.79.05c-.11.02-.22.05-.33.09-.7.24-1.28.78-1.75 1.32-.87 1.02-1.6 1.89-2.48 2.91-1.31 1.31-2.92 2.76-2.62 4.79.29 1.02 1.02 2.03 2.33 2.32.73.15 3.06-.44 5.54-.44h.18c2.48 0 4.81.58 5.54.44 1.31-.29 2.04-1.31 2.33-2.32.31-2.04-1.3-3.49-2.61-4.8z"/></svg>
+              </i>
             </div>
             <h6 class="text-white text-size-18 text-capitalize font-weight-bold mt-3">opening hours</h6>
             <p class="text-white lh-18 text-size-14">We work almost all year round</p>
@@ -328,7 +339,9 @@
                      ' dur='15s' repeatCount='indefinite' begin='0s'>
                 </animate>
               </svg>
-              <i class='mdi mdi-paw text-white display-4 position-absolute icon__section-visit'></i>
+              <i class='position-absolute icon__section-visit'>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><circle cx="4.5" cy="9.5" r="2.5"/><circle cx="9" cy="5.5" r="2.5"/><circle cx="15" cy="5.5" r="2.5"/><circle cx="19.5" cy="9.5" r="2.5"/><path d="M17.34 14.86c-.87-1.02-1.6-1.89-2.48-2.91-.46-.54-1.05-1.08-1.75-1.32-.11-.04-.22-.07-.33-.09-.25-.04-.52-.04-.78-.04s-.53 0-.79.05c-.11.02-.22.05-.33.09-.7.24-1.28.78-1.75 1.32-.87 1.02-1.6 1.89-2.48 2.91-1.31 1.31-2.92 2.76-2.62 4.79.29 1.02 1.02 2.03 2.33 2.32.73.15 3.06-.44 5.54-.44h.18c2.48 0 4.81.58 5.54.44 1.31-.29 2.04-1.31 2.33-2.32.31-2.04-1.3-3.49-2.61-4.8z"/></svg>
+              </i>
             </div>
             <h6 class="text-white text-size-18 text-capitalize font-weight-bold mt-3">group discounts</h6>
             <p class="text-white lh-18 text-size-14">Come with your family or friends and get a discount</p>
@@ -350,7 +363,9 @@
                      ' dur='15s' repeatCount='indefinite' begin='0s'>
                 </animate>
               </svg>
-              <i class='mdi mdi-paw text-white display-4 position-absolute icon__section-visit'></i>
+              <i class='position-absolute icon__section-visit'>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><circle cx="4.5" cy="9.5" r="2.5"/><circle cx="9" cy="5.5" r="2.5"/><circle cx="15" cy="5.5" r="2.5"/><circle cx="19.5" cy="9.5" r="2.5"/><path d="M17.34 14.86c-.87-1.02-1.6-1.89-2.48-2.91-.46-.54-1.05-1.08-1.75-1.32-.11-.04-.22-.07-.33-.09-.25-.04-.52-.04-.78-.04s-.53 0-.79.05c-.11.02-.22.05-.33.09-.7.24-1.28.78-1.75 1.32-.87 1.02-1.6 1.89-2.48 2.91-1.31 1.31-2.92 2.76-2.62 4.79.29 1.02 1.02 2.03 2.33 2.32.73.15 3.06-.44 5.54-.44h.18c2.48 0 4.81.58 5.54.44 1.31-.29 2.04-1.31 2.33-2.32.31-2.04-1.3-3.49-2.61-4.8z"/></svg>
+              </i>
             </div>
             <h6 class="text-white text-size-18 text-capitalize font-weight-bold mt-3">movie history</h6>
             <p class="text-white lh-18 text-size-14">Find out the craziest and most beautiful movie stories</p>
@@ -372,7 +387,9 @@
                      ' dur='15s' repeatCount='indefinite' begin='0s'>
                 </animate>
               </svg>
-              <i class='mdi mdi-paw text-white display-4 position-absolute icon__section-visit'></i>
+              <i class='position-absolute icon__section-visit'>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><circle cx="4.5" cy="9.5" r="2.5"/><circle cx="9" cy="5.5" r="2.5"/><circle cx="15" cy="5.5" r="2.5"/><circle cx="19.5" cy="9.5" r="2.5"/><path d="M17.34 14.86c-.87-1.02-1.6-1.89-2.48-2.91-.46-.54-1.05-1.08-1.75-1.32-.11-.04-.22-.07-.33-.09-.25-.04-.52-.04-.78-.04s-.53 0-.79.05c-.11.02-.22.05-.33.09-.7.24-1.28.78-1.75 1.32-.87 1.02-1.6 1.89-2.48 2.91-1.31 1.31-2.92 2.76-2.62 4.79.29 1.02 1.02 2.03 2.33 2.32.73.15 3.06-.44 5.54-.44h.18c2.48 0 4.81.58 5.54.44 1.31-.29 2.04-1.31 2.33-2.32.31-2.04-1.3-3.49-2.61-4.8z"/></svg>
+              </i>
             </div>
             <h6 class="text-white text-size-18 text-capitalize font-weight-bold mt-3">upcoming events</h6>
             <p class="text-white lh-18 text-size-14">We also have various events</p>
@@ -431,13 +448,17 @@
             </div>
 
             <div class="img-slider__navi mt-5 d-flex justify-content-center align-items-center">
-              <i class="mdi mdi-arrow-left text-white img-slider__navi-icon"></i>
+              <i class="arrow-left img-slider__navi-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+              </i>
               <span class='img-slider__navi-circle btn-custom-round d-inline-block'></span>
               <span class='img-slider__navi-circle btn-custom-round d-inline-block'></span>
               <span class='img-slider__navi-circle btn-custom-round d-inline-block'></span>
               <span class='img-slider__navi-circle btn-custom-round d-inline-block'></span>
               <span class='img-slider__navi-circle btn-custom-round d-inline-block'></span>
-              <i class="mdi mdi-arrow-right text-white img-slider__navi-icon"></i>
+              <i class="arrow-right img-slider__navi-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+              </i>
             </div>
           </div>
         </div>

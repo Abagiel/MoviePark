@@ -185,6 +185,15 @@ section {
   width: 25px;
 }
 
+/*Иконки секции ABOUT*/
+.about-icon {
+  fill: #fff;
+}
+.about-icon > svg {
+  height: 3rem;
+  width: 3rem;
+}
+
 /*Утилита для заголовка кнопки*/
 .btn-custom-text {
   position: relative;
@@ -304,7 +313,7 @@ section {
 /*!!!Иконки*/
 /*Иконки для header*/
 .header-icon {
-  color: #ff7a00;
+  fill: #ff7a00;
   cursor: pointer;
   display: inline-block;
   height: 24px;
@@ -314,9 +323,18 @@ section {
 }
 .question-mark {
   display: inline-block;
-  font-size: 1.5rem;
   height: 1.5rem;
   width: 1.5rem;
+
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.5rem;
+  transition: background .3s,
+              color .3s;
+}
+.question-mark:hover {
+  background: #fff;
+  color: #ff7a00;
 }
 
 /*Иконки для section-visit*/
@@ -330,6 +348,12 @@ section {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
+  fill: #fff;
+}
+.icon__section-visit > svg {
+  height: 3rem;
+  width: 3rem;
 }
 
 /*SVG-MORPHING*/
@@ -699,12 +723,19 @@ section {
 }
 
 .img-slider__navi-icon {
+  align-items: center;
+  display: flex;
   background: rgba(256, 256, 256, 0.1);
   border-radius: .1rem;
   cursor: pointer;
   height: 2.4rem;
-  font-size: 1.8rem;
   transition: background .3s;
+
+  fill: #fff;
+}
+.img-slider__navi-icon > svg {
+  height: 1.8rem;
+  width: 1.8rem;
 }
 @media (max-width: 575px) {
   .img-slider__navi-icon {
